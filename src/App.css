@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Luckiest+Guy&family=Train+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+#logo{
+    width: 100px;
+    height: 40px;
+    background-color: none;
+}
+
+.welcome{
+    font-family: 'Train One', cursive;
+}
+#tagline{
+    font-family: 'Chango', cursive;
+}
+
+#home{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    background: linear-gradient(-45deg,#EE7752,#E73ECE,#23A6D5,#23D5AB);
+    background-size: 400% 400%;
+    position: relative;
+    animation: changing 10s ease-in-out infinite;
+   
+}
+#error_page{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#about_page{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+.dev{
+    font-family: 'Luckiest Guy', cursive;
+}
+#about_form{
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    box-shadow: -25px 25px 25px rgba(255,255,255,0.1), 25px 25px 25px rgba(0,0,0,0.2), inset -5px 5px 5px rgba(255,255,255,0.1), 5px 5px 5px rgba(0,0,0,0.2);
+}
+#aboutimg{
+    width: 500px;
+    height: 500px;
+}
+.contact_info{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 40px;
+    font-size: 2rem;
+    
+    font-family: 'Dela Gothic One', cursive;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: -25px 25px 25px rgba(255,255,255,0.1), 25px 25px 25px rgba(0,0,0,0.2), inset -5px 5px 5px rgba(255,255,255,0.1), 5px 5px 5px rgba(0,0,0,0.2);
+}
+@keyframes changing{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+#sigin_form{
+    /* background-color: white; */
+    /* background: linear-gradient(-45deg,#68bddb,#23D5AB); */
+    border-radius: 15px;
+    box-shadow: -25px 25px 25px rgba(255,255,255,0.1), 25px 25px 25px rgba(0,0,0,0.2), inset -5px 5px 5px rgba(255,255,255,0.1), 5px 5px 5px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+}
+#contact_form{
+    /* background: linear-gradient(-45deg,#23A6D5,#23D5AB); */
+    /* background-color: white; */
+    border-radius: 15px;
+    box-shadow: -25px 25px 25px rgba(255,255,255,0.1), 25px 25px 25px rgba(0,0,0,0.2), inset -5px 5px 5px rgba(255,255,255,0.1), 5px 5px 5px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+#signup_form{
+    /* background-color: white; */
+    /* background: linear-gradient(-45deg,#23A6D5,#23D5AB); */
+    border-radius: 15px;
+    box-shadow: -25px 25px 25px rgba(255,255,255,0.1), 25px 25px 25px rgba(0,0,0,0.2), inset -5px 5px 5px rgba(255,255,255,0.1), 5px 5px 5px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tables{
+    margin: auto;
+    /* padding: auto; */
+}
+.table{
+    margin-left: 40px;
+}
+#Signimg{
+    height: 200px;
+    width: 100%;
+}
+.forcenter{
+    height: 100vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#Signupimg{
+    height: 500px;
+    width: 50%;
+}
+#centering{
+
+    height: 110vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#Messageimg{
+    height: 250px;
+    width: 100%;
+}
+#Transimg{
+    height: 300px;
+    width: 80%;
+}
+
+#centerTransaction{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
