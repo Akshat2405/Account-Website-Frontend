@@ -39,8 +39,8 @@ const Home = () => {
             <img id="Homeimg" src={Homeimg} alt="no logo"/>
             <h2 className="welcome">Welcome {userName}</h2>
             <h1 className="dev">Your account number is <span class="badge rounded-pill bg-info text-dark">{userId}</span></h1>
-            <h2 id="trans" >All Transaction</h2>
-            {transactiondetails && transactiondetails.map((ele,idx)=>{return(
+            
+            {transactiondetails && <h2 id="trans" >Transaction List</h2> && transactiondetails.map((ele,idx)=>{return(
                 <Card border="success" style={{ width: '18rem' }}>
                     <Card.Header>Transaction #{idx+1}</Card.Header>
                     <Card.Body>
