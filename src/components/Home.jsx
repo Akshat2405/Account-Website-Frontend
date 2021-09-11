@@ -3,6 +3,7 @@ import {useState,useEffect} from 'react';
 import Homeimg from '../images/home.svg';
 import 'bootstrap/dist/css/bootstrap.css';
 import {Card} from 'react-bootstrap';
+import Showtransaction from './Showtransaction';
 const Home = () => {
     const [userName, setuserName] = useState("");
     const [transactiondetails,settransactiondetails]=useState();
@@ -30,6 +31,11 @@ const Home = () => {
             console.log(err);
         }
     }
+    const showheading=(transactiondetails)=>{
+        return(
+            <Showtransaction transactiondetails={transactiondetails} />
+        );
+    }
     useEffect(()=>{
         callHomePage();
     },[]);
@@ -39,19 +45,9 @@ const Home = () => {
             <img id="Homeimg" src={Homeimg} alt="no logo"/>
             <h2 className="welcome">Welcome {userName}</h2>
             <h1 className="dev">Your account number is <span class="badge rounded-pill bg-info text-dark">{userId}</span></h1>
-            
-            {transactiondetails && <h2 id="trans" >Transaction List</h2> && transactiondetails.map((ele,idx)=>{return(
-                <Card border="success" style={{ width: '18rem' }}>
-                    <Card.Header>Transaction #{idx+1}</Card.Header>
-                    <Card.Body>
-                    <Card.Title>Account Details:- {ele.sender_Id}</Card.Title>
-                    <Card.Text>
-                        {ele.deposited? 'Depiste  +'+ele.amount: 'Credit  -'+ele.amount}
-                    </Card.Text>
-                    </Card.Body>
-                </Card>
-            )
-        })}
+            {
+                transactiondetails && showheading(transactiondetails)
+            }
         </div>
         
         </>
